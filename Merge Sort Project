@@ -1,0 +1,33 @@
+# [16,21,11,8,12,22] -> Merge Sort
+Merge Sort Aşamaları:
+Diziyi parçalara ayırma:
+
+İlk olarak dizi sürekli olarak ikiye bölünür.
+
+[16, 21, 11, 8, 12, 22]
+Bölme işlemi:
+
+[16, 21, 11]   [8, 12, 22]
+
+[16] [21, 11]   [8] [12, 22]
+
+[16] [21] [11]   [8] [12] [22]
+Parçaları sıralı şekilde birleştirme:
+
+Parçalar sıralanarak birleştirilir.
+
+[16] [11, 21]   [8] [12, 22]
+
+[16] [11, 21]   [8, 12, 22]
+
+[11, 16, 21]   [8, 12, 22]
+Son adımda tüm parçalar sıralanarak birleştirilir:
+
+[8, 11, 12, 16, 21, 22]
+Big-O Gösterimi:
+Merge Sort'un zaman karmaşıklığı:
+
+En iyi durum (Best case): O(n log n)
+Ortalama durum (Average case): O(n log n)
+En kötü durum (Worst case): O(n log n)
+Merge Sort, dizi ne kadar karışık olursa olsun her zaman O(n log n) karmaşıklığına sahiptir, çünkü her seferinde diziyi ikiye bölüp, bu bölümleri sıralı bir şekilde birleştirir.
